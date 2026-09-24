@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.kalyanjewellers.net'),
   title: { default: 'Kalyan Jewellers | Every Jewel Holds a Story', template: '%s | Kalyan Jewellers' },
   description: 'Discover exquisite gold, diamond and bridal jewellery from Kalyan Jewellers. A legacy of Indian craftsmanship, trust and timeless design.',
+  verification: { google: 'VUqWfM-Y0fevhaItV_23slZnCcvXmWpkVqwXPXJUbSA' },
   openGraph: { title: 'Kalyan Jewellers', description: 'A legacy of beauty, crafted for the moments that matter.', type: 'website', images: ['/images/leadership/chairman-wide.webp'] },
 };
 
