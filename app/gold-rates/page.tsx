@@ -1,0 +1,3 @@
+import type { Metadata } from 'next';
+export const metadata: Metadata = { title: 'Gold Rate Today', description: 'Contact your nearest Kalyan Jewellers showroom for today’s gold rate.' };
+export default function GoldRatesPage() { return <div className="simple-page"><span className="eyebrow">THE KALYAN PROMISE</span><h1>Gold, with<br/><i>confidence.</i></h1><p>Gold rates vary by location and are updated through our showrooms. Please contact your nearest store for today’s rate and current making charges.</p><a href="/store-locator" className="button button-wine">FIND YOUR NEAREST STORE ↗</a></div>; }

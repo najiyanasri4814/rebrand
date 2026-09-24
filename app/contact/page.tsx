@@ -1,0 +1,4 @@
+import type { Metadata } from 'next';
+import { FeedbackForm } from '@/components/Forms';
+export const metadata: Metadata = { title: 'Contact Us', description: 'Get in touch with Kalyan Jewellers or share your feedback.' };
+export default function ContactPage() { return <div className="contact-page section-wrap"><div className="page-hero"><span className="eyebrow">WE’RE HERE FOR YOU</span><h1>Let’s start<br/><i>a conversation.</i></h1></div><div className="contact-grid"><div><span className="eyebrow">GET IN TOUCH</span><h2>We’d love to<br/>hear from you.</h2><p>For questions, feedback or assistance, our team is ready to help.</p><a href="tel:1800-425-7333">1800 425 7333</a><a href="mailto:customercare@kalyanjewellers.net">customercare@kalyanjewellers.net</a></div><FeedbackForm/></div></div>; }

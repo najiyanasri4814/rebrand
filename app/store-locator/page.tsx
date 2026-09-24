@@ -1,0 +1,3 @@
+import type { Metadata } from 'next';
+export const metadata: Metadata = { title: 'Store Locator', description: 'Find your nearest Kalyan Jewellers showroom.' };
+export default function StoreLocatorPage() { return <div className="simple-page"><span className="eyebrow">COME VISIT US</span><h1>Find your<br/><i>Kalyan store.</i></h1><p>Our team looks forward to welcoming you.</p><form className="store-search" action="https://www.google.com/maps/search/Kalyan+Jewellers" target="_blank"><label className="sr-only" htmlFor="location">City or postcode</label><input id="location" name="query" placeholder="Enter a city or postcode"/><button className="button button-wine">FIND A STORE ↗</button></form></div>; }
