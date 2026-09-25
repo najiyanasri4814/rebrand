@@ -44,4 +44,4 @@ export const footerGroups = [
   { title: 'OTHER', links: [['Franchise Opportunities', '/contact'], ['Feedback', '/contact'], ['Find a Store', '/store-locator'], ['Gift Cards', '/#gift-card']] },
 ];
 
-export const jewelleryImage = (id: string) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=85`;
+export const jewelleryImage = (id: string) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=75`;

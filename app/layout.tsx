@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
+import { DM_Sans, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { Header, TopBar } from '@/components/Header';
 import { Footer } from '@/components/Sections';
 import { Newsletter } from '@/components/Forms';
+
+const dmSans = DM_Sans({ subsets: ['latin'], weight: ['400', '600'], variable: '--font-dm-sans', display: 'swap' });
+const playfair = Playfair_Display({ subsets: ['latin'], weight: ['400'], style: ['normal', 'italic'], variable: '--font-playfair', display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kalyanjewellers.net'),
@@ -13,5 +17,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body id="top"><TopBar/><Header/><main>{children}</main><Newsletter/><Footer/></body></html>;
+  return <html lang="en"><body id="top" className={`${dmSans.variable} ${playfair.variable}`}><TopBar/><Header/><main>{children}</main><Newsletter/><Footer/></body></html>;
 }
